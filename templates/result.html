@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Thank you for submitting the survey</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center p-3 mb-4 bg-info text-white">
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <h1>Your Submitted Information</h1>
+            <p>Name: {{session["name"]}}</p>
+            <p>Location: {{session["location"]}}</p>
+            <p>Language: {{session["language"]}}</p>
+            <p>Comment: {{session["comment"]}}</p>
+        </div>
+    </div>
+</body>
+</html>

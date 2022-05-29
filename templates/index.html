@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center p-3 mb-4 bg-info text-white">
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+                <h1>Dojo Survey</h1>
+            </div>
+            <form action="/process" method="post">
+                <div class="p-2 bd-highlight">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="p-2 bd-highlight">
+                    <label for="location">Location:</label>
+                    <select name="location" id="location">
+                        <option value="New York">New York</option>
+                        <option value="L.A.">L.A.</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Remote">Remote</option>
+                    </select>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <label for="fav_language">Favorite Language:</label>
+                    <select name="language" id="fav_language">
+                        <option value="Python">Python</option>
+                        <option value="C#">C#</option>
+                        <option value="Java">Java</option>
+                        <option value="Ruby">Ruby</option>
+                    </select>
+                </div> 
+                <div class="p-2 bd-highlight">
+                    <label for="comment">Comment:</label>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <textarea name="comment" id="comment" rows="5" cols="30"></textarea>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <input class="btn btn-warning" type="submit" value="Submit">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
